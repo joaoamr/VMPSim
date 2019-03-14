@@ -383,11 +383,6 @@ int main(int argc, char *argv[]){
             break;
         }
 
-        if(strcmp(argv[i], "eajoint") == 0){
-            vmp = new VMSchedulerEAJOINT((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
-            break;
-        }
-
         if(strcmp(argv[i], "klvmp") == 0){
             vmp = new VMSchedulerFFKL((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
             break;
