@@ -13,7 +13,11 @@ The total sum of VMs pair flow times the cost between them.
 The tool has the following algorithms implemented:
 
 1 - First-Fit
+
 2 - Firs-Fit Decreasing
+
 3 - Best-Fit Decreasing
+
 4 - Round-Robin
+
 5 - KLVMP (Kernighan-and-Lin's based heuristic for Virtual Machine Placement)
