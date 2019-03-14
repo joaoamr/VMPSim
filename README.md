@@ -4,10 +4,10 @@
 This a tool for solvind a 2D Virtual Machine Placent network-aware problem. It receives the PMs list with the network topology and VMs with
 its communication mesh, solve the problem and display two objectives values:
 
-<h1>1. Actives PMs: <\h1>
+<h1>1. Actives PMs: </h1>
 The number of system PMs that host at least 1 PM.
 
-<h1>1. Network Cost: <\h1>
+<h1>1. Network Cost: </h1>
 The total sum of VMs pair flow times the cost between them.
 
 The tool has the following algorithms implemented:
