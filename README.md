@@ -16,8 +16,6 @@ The tool has the following algorithms implemented:
 
 2 - Firs-Fit Decreasing
 
-3 - Best-Fit Decreasing
+3 - Round-Robin
 
-4 - Round-Robin
-
-5 - KLVMP (Kernighan-and-Lin's based heuristic for Virtual Machine Placement)
+4 - KLVMP (Kernighan-and-Lin's based heuristic for Virtual Machine Placement)
