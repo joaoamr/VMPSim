@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "FatTreeGraph.h"
+#include "StarGraph.h"
 #include "listlib.h"
 #include "VmPlacement/VirtualMachine.h"
 #include "VmPlacement/CloudMachine.h"
@@ -63,23 +64,15 @@ Graph* buildNetworkTopology(int n, char* topology, int k){
     Graph *d;
     if(strcmp(topology, "Fat-tree") == 0){
         d = new FatTreeGraph(k, n);
-        std::cout << d->getEdge(0, 1);
     }
-    return d;
-/*
-    if(strcmp(topology, "Star") == 0){
-        for(int i = 0 ; i < n; i++){
-            for(int j = 0 ; j < n; j++){
-                if(i == j)
-                    dist = 0;
-                else
-                   dist = 1;
 
-                d->insertArc(i, j , dist);
-            }
-        }
-    }*/
+    if(strcmp(topology, "Star") == 0){
+        d = new StarGraph(k, n);
+    }
+
+    return d;
 }
+
 
 double computeTotalCost(List<Vertex> *vList, Graph* source){
     double d = 0;
@@ -313,7 +306,7 @@ void makeOptmalBP(List<CloudMachine>* pms, List<VirtualMachine>* vms){
 int main(int argc, char *argv[]){
     FILE* vmlist, *pmlist;
     vmlist = fopen("vms", "r");
-    char* algorithm = "First-Fit";
+    char[100] algorithm = "First-Fit";
     bool volume = false, networksort = false;
 
     for(int i = 0; i < argc; i++){
