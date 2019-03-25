@@ -390,10 +390,15 @@ int main(int argc, char *argv[]){
             vmp = new VMSchedulerFFD((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
             break;
         }
+        
+        if(strcmp(argv[i], "rr") == 0){
+            vmp = new VMSchedulerRR((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
+            break;
+        }
     }
 
     if(vmp == NULL)
-        vmp = new VMSchedulerMA_NABF((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
+        vmp = new VMSchedulerFF((List<VirtualMachine>*)d->getVertexList(), pms, network, d);
 
     clock_t t0 = clock();
     if(volume)
