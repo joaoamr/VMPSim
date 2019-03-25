@@ -41,15 +41,15 @@ int Partition::getD3(){
 }
 
 void Partition::setD1(int d){
-    return d1 = d;
+    d1 = d;
 }
 
 void Partition::setD2(int d){
-    return d2 = d;
+    d2 = d;
 }
 
 void Partition::setD3(int d){
-    return d3 = d;
+    d3 = d;
 }
 
 unsigned int Partition::getId() {
