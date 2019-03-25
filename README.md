@@ -1,7 +1,7 @@
 # VMPSim
 2D Virtual Machine Placement solve tool that leverages the network traffic flow between VMs nodes.
 
-This a tool for solvind a 2D Virtual Machine Placent network-aware problem. It receives the PMs list with the network topology and VMs with
+This a tool for solving a 2D Virtual Machine Placent network-aware problem. It receives the PMs list with the network topology and VMs with
 its communication mesh, solve the problem and display two objectives values:
 
 1. Actives PMs: 
