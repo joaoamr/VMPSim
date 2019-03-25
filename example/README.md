@@ -1,8 +1,8 @@
-#Input Examples
+# Input Examples
 
 This folder contains the input examples for the programs. The program reads two files in its same folder:
 
-##vms
+## vms
 
 This files contains the VMs of the system with the communication flow. The first line indicates the number of VMs in the system and the 
 following lines the resource requirements and communication patterns of each VMs node.
@@ -20,7 +20,7 @@ For example, the file above represents a system with 4 VMs.
 
 In this example we have 4 VMs, where VM-0 and VM-1 performs 1.0 of communication rate and VM-2 and VM-3 perform 1.5 of commmuncation rate.
 
-##pms
+## pms
 
 This files stores the datacenter system configuration. The fist line is composed by an integer, that indicates the number of PMs, a string
 that indicates the datacenter topology and an integer that indicates the parameter *k* of topology properties.
@@ -39,7 +39,7 @@ For example, the file above represents a datacenter with 4 PMs in a star topolog
 In this example we have 4 PMs connected in a 48-Star topology. The program even supports *Fat-tree* instead of *Star*. However, be aware that
 weather the number of PMs matches with *k* parameter.
 
-#Running the program
+# Running the program
 You must specify the placement algorithm at the program call. For exemple:
 
 ```
@@ -50,11 +50,11 @@ The parameter *[algorithm]* can be *ff* for *First-Fit, *ffd* for *First-Fit Dec
 The parameter *[optional]* can be *-v* for sorting PMs in decreasing order by dimensions product or *-nv* for sorting PMs in decreasing order by dimensions 
 product and exchange the their position in the datacenter so that the greater VMs be as near as possible one from another.
 
-#Output
+# Output
 
 The program output two files:
 
-##placement
+## placement
 
 This file indicates the placement solution, for exemple:
 
@@ -64,6 +64,6 @@ This file indicates the placement solution, for exemple:
 
 In this case, the VM-0 is placed in PM-0, VM-1 in PM-0, VM-2 in PM-1 and VM-3 in PM-2.
 
-#performance.txt
+## performance.txt
 
 Informations about the objectives values and the time it took to solve the problem.
