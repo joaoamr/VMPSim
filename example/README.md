@@ -36,8 +36,7 @@ For example, the file above represents a datacenter with 4 PMs in a star topolog
 128 1 4000 
 ```
 
-In this example we have 4 PMs connected in a 48-Star topology. The program even supports *Fat-tree* instead of *Star*. However, be aware that
-weather the number of PMs matches with *k* parameter.
+In this example we have 4 PMs connected in a 48-Star topology. The program even supports *Fat-tree* instead of *Star*. However, be aware weather the number of PMs matches with *k* parameter.
 
 # Running the program
 You must specify the placement algorithm at the program call. For exemple:
