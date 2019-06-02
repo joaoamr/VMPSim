@@ -39,7 +39,7 @@ KLMultCluster::KLMultCluster(List<Partition> *p, List<Vertex> *v, Graph *topolog
     for(int i = 0; i < maxId + 1; i++)
         mapList->add(new List<MoveGain>(vlist->size()));
 
-    movegainlist = new List<MoveGain>(v->size() * (maxId + 1));
+    movegainlist = new List<MoveGain>(p->size() * (maxId + 1));
 
     run();
 }
